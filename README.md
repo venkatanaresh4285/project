@@ -47,17 +47,16 @@ Make sure you have the following installed:
 
 
 # Folder Structure
-   src/
-│
+src/
 ├── components/
-│   ├── FormBuilder/           # Builder UI
-│   ├── FormFields/            # Form field components (TextField, Dropdown, etc.)
-│   └── ui/                    # Reusable UI components
-│
-├── pages/                     # FormBuilderPage, FormFillPage, HomePage
-├── contexts/                  # Context API (e.g., FormBuilderContext)
-├── utils/                     # Helper functions
-└── types/                     # TypeScript types
+│ ├── FormBuilder/ # Main form builder UI components (canvas, sidebar, preview)
+│ ├── FormFields/ # Individual form fields (TextField, CheckboxField, DropdownField, etc.)
+│ └── ui/ # Reusable UI components (buttons, cards, etc.)
+├── contexts/ # React Context API providers (FormBuilderContext)
+├── pages/ # Main pages (FormBuilderPage, FormFillPage, HomePage)
+├── utils/ # Utility functions (helpers, storage, validation)
+├── types/ # TypeScript type definitions
+└── vite-env.d.ts # Vite environment typings
 
 ## Responsive Preview Modes
 You can switch between Desktop / Tablet / Mobile views from the preview section in the builder to test responsiveness.
